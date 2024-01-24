@@ -1,0 +1,16 @@
+<figure style="padding: 20px 0;">
+  <a href="{{ .Destination | safeURL }}" 
+     {{ with .Title }} title="{{ . }}" {{ end }}
+  >
+    <img src="{{ .Destination | safeURL }}" 
+         style="border-radius: 5px; max-width: 100%; padding: 0;"
+         alt="{{ .Text }}" 
+         {{ with .Title }}
+         title="{{ .Title }}"
+         {{ end }}
+    />
+  </a>
+  <figcaption style="margin-top: 10px; text-align: center; font-size: 0.9em;">
+    {{ .Text }}
+  </figcaption>
+</figure>
