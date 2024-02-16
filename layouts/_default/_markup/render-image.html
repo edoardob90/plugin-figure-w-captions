@@ -1,4 +1,4 @@
-<figure style="padding: 20px 0;">
+<figure style="padding: 20px 0; margin: 0;">
   <a href="{{ .Destination | safeURL }}" 
      {{ with .Title }} title="{{ . }}" {{ end }}
   >
@@ -10,7 +10,7 @@
          {{ end }}
     />
   </a>
-  <figcaption style="margin-top: 10px; text-align: center; font-size: 0.9em;">
+  <figcaption style="margin-top: 0.5em; text-align: center; font-size: 0.8em;">
     {{ .Text }}
   </figcaption>
 </figure>
